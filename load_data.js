@@ -44,17 +44,6 @@ function inst(unity_inst)
             });
             unity_inst.SendMessage('data_loader','generat_platform');     
         });              
-    });    
+    });
+    
 }
-function set_view()
-{
-    var device_width = window.innerWidth;
-    var device_height = window.innerHeight;
-    var container = document.getElementById("unity-container").style;
-    if(device_height < device_width)
-    {
-        container.width = device_width+'px';
-        container.height = device_height+'px';
-    }
-}
-set_view();
